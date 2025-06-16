@@ -2,35 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inns by the Sea</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Inns by the Sea Logo" />
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#">Gift Certificates</a>
+      <a href="#">Perks</a>
+      <a href="#">Gallery</a>
+      <a href="#" class="phone-btn">1-800-433-4733</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
   <!-- Hero Section -->
   <section class="hero">
-    <img src="hero.jpg" alt="Hero Image" class="hero-image" />
+    <img src="hero.jpg" alt="Coastal View" class="hero-image" />
     <div class="hero-text">
-      <h1>Welcome to Inns by the Sea</h1>
-      <p>Experience coastal charm in Carmel-by-the-Sea</p>
+      <h1>Discover Our Coastal Inns</h1>
+      <p>Located in the heart of Carmel, walk by the shore to<br>comfortable, luxurious stays with boutique charm and exceptional hospitality.</p>
     </div>
   </section>
 
   <!-- Property Carousel -->
   <section class="carousel-section">
-    <h2>Explore Our Inns</h2>
+    <h2>Explore our amazing properties</h2>
     <div class="carousel">
-      <div class="property-card">
-        <img src="wayside-inn.jpg" alt="Wayside Inn" />
-        <h3>Wayside Inn</h3>
-      </div>
       <div class="property-card">
         <img src="carriage-house.jpg" alt="Carriage House Inn" />
         <h3>Carriage House Inn</h3>
+        <p>Carmel-by-the-Sea, CA</p>
+      </div>
+      <div class="property-card">
+        <img src="candle-light.jpg" alt="Candle Light Inn" />
+        <h3>Candle Light Inn</h3>
+        <p>Carmel-by-the-Sea, CA</p>
+      </div>
+      <div class="property-card">
+        <img src="wayside-inn.jpg" alt="Wayside Inn" />
+        <h3>Wayside Inn</h3>
+        <p>Carmel-by-the-Sea, CA</p>
       </div>
       <div class="property-card">
         <img src="cypress-inn.jpg" alt="Cypress Inn" />
         <h3>Cypress Inn</h3>
+        <p>Monterey Beach, CA</p>
       </div>
     </div>
   </section>
@@ -59,5 +83,12 @@
       <p>Give the gift of a seaside escape to someone special.</p>
     </div>
   </section>
+   <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
